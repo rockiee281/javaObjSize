@@ -26,23 +26,10 @@ public class ObjectSizeFetcher {
         
         System.out.println("empty String[] size:" + ObjectSizeFetcher.getObjectSizeOf(new String[0]));
         System.out.println("String[1] size:" + ObjectSizeFetcher.getObjectSizeOf(new String[1]));
-        System.out.println("String[2] size:" + ObjectSizeFetcher.getObjectSizeOf(new String[2]));
-        System.out.println("String[255] size:" + ObjectSizeFetcher.getObjectSizeOf(new String[255]));
-        System.out.println("String[256] size:" + ObjectSizeFetcher.getObjectSizeOf(new String[256]));
-        System.out.println("String[500] size:" + ObjectSizeFetcher.getObjectSizeOf(new String[500]));
         String[] strArray = {"1"};
         System.out.println("String[] with one element size:" + ObjectSizeFetcher.getObjectSizeOf(strArray));
 
-
-        System.out.println("empty int[] size:" + ObjectSizeFetcher.getObjectSizeOf(new int[0]));
-        System.out.println("int[1] size:" + ObjectSizeFetcher.getObjectSizeOf(new int[1]));
-        System.out.println("int[2] size:" + ObjectSizeFetcher.getObjectSizeOf(new int[2]));
-        System.out.println("int[64] size:" + ObjectSizeFetcher.getObjectSizeOf(new int[2]));
-        System.out.println("int[255] size:" + ObjectSizeFetcher.getObjectSizeOf(new int[255]));
-        System.out.println("int[256] size:" + ObjectSizeFetcher.getObjectSizeOf(new int[256]));
-        System.out.println("int[500] size:" + ObjectSizeFetcher.getObjectSizeOf(new int[500]));
-
-        for (int i=0;i<256;i++){
+        for (int i=0;i<16;i++){
             System.out.println("int["+i+"] size:" + ObjectSizeFetcher.getObjectSizeOf(new int[i])); 
         }
 
