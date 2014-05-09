@@ -26,4 +26,4 @@ int[2] size:24
 int[3] size:32
 int[4] size:32
 ```
-So I find that the `UseCompressedOops`  option is open by default on my server :)
+So I find that the `UseCompressedOops`  option is open by default on my server, [relate post in Chinese](http://developer.51cto.com/art/201104/256957.htm)
